@@ -49,7 +49,8 @@ async def search(bot, message):
                name = (msg.text or msg.caption).split("\n")[0]
                if name in results:
                   continue 
-               results += f"<b><I>♻️ {name}\n🔗 {msg.link}</I></b>\n\n"                                                      
+               results += f"<b><I>♻️ {name}\n🔗 {msg.link}</I></b>\n\n"     
+
     else:
           await send_message_in_chunks(bot, message.chat.id, head+results)
     except:
