@@ -50,7 +50,7 @@ async def search(bot, message):
                if name in results:
                   continue 
                results += f"<b><I>♻️ {name}\n🔗 {msg.link}</I></b>\n\n"     
-     if bool(results)==False:
+       if bool(results)==False:
           movies = await search_imdb(query)
           buttons = []
           for movie in movies: 
@@ -62,7 +62,6 @@ async def search(bot, message):
           await send_message_in_chunks(bot, message.chat.id, head+results)
     except:
        pass
-
 
 
 @Client.on_callback_query(filters.regex(r"^recheck"))
