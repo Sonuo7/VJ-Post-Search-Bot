@@ -50,7 +50,7 @@ async def search(bot, message):
                if name in results:
                   continue 
                results += f"<b><I>♻️ {name}\n🔗 {msg.link}</I></b>\n\n"     
-     if bool(results)==True:
+     if bool(results)==False:
           movies = await search_imdb(query)
           buttons = []
           for movie in movies: 
