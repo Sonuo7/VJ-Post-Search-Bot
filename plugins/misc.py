@@ -21,7 +21,7 @@ async def start(bot, message):
         InlineKeyboardButton("🤖 ᴜᴘᴅᴀᴛᴇ", url="https://t.me/alsamovies"),
         InlineKeyboardButton("🔍 ɢʀᴏᴜᴘ", url="https://t.me/alsamovies")
     ]]
-    await message.reply_photo(photo='link', 
+    await message.reply_photo(photo='https://envs.sh/3bL.jpg', 
 caption=script.START.format(message.from_user.mention),
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(button))
