@@ -23,7 +23,6 @@ async def start(bot, message):
     ]]
     await message.reply_photo(photo='https://envs.sh/3bL.jpg', 
 caption=script.START.format(message.from_user.mention),
-                        disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(button))
  
 @Client.on_message(filters.command("help"))
